@@ -45,7 +45,7 @@ def hit?(sum_of_hand)
   elsif input == "h"
     sum_of_hand = deal_card + sum_of_hand
   end
-    
+
 end
 
 def invalid_command
