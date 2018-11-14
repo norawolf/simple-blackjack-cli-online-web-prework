@@ -39,13 +39,13 @@ def hit?(sum_of_hand)
   elsif input == "h"
     sum_of_hand = deal_card + sum_of_hand
   end
-end
 
-while input != 's' && input != 'h'
-  invalid_command
-  prompt_user
-  input = get_user_input
-end
+  while input != 's' && input != 'h'
+    invalid_command
+    prompt_user
+    input = get_user_input
+  end
+end 
 
 def invalid_command
   puts "Please enter a valid command"
